@@ -1,0 +1,21 @@
+name: 'Pull Request Workflow'
+
+on:
+  pull_request:
+    types: [opened, ready_for_review, reopened, edited, synchronize]
+
+jobs:
+  prettier:
+    uses: 'SaaS-Innova/github-action/.github/workflows/prettier.yml@main'
+    with:
+      prettier_options: '--check **/*.tsx'
+    secrets:
+      token_for_github_api: ${{ secrets.PERSONAL_TOKEN_FOR_WORKFLOW }}
+
+  add-review:
+    permissions: write-all
+    uses: 'SaaS-Innova/github-action/.github/workflows/auto_assign.yml@main'
+    with:
+      reviewers: "marten-nilsson,RohitGoyani"
+    secrets:
+      token_for_github_api: ${{ secrets.PERSONAL_TOKEN_FOR_WORKFLOW }}

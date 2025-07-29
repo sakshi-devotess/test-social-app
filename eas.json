@@ -1,0 +1,66 @@
+{
+  "cli": {
+    "version": ">= 10.1.1"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "REACT_APP_PUBLIC_URL": "https://dp-stage-be.saasinnova.com",
+        "REACT_APP_GRAPHQL_URL": "https://dp-stage-be.saasinnova.com/graphql",
+        "STRIPE_PUBLIC_KEY": "pk_test_51RKGKhPq3Dcn0C922E2WwV8YnIA1kLx0Icv3KIMLRx5A8fMKdwXhNVZYzLDr9uEKVkVRZCGHVcBs45YxTpmcer8000j6JnvbKo"
+      }
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        //TODO : Temporary set values here ,need to manage them in expo dev
+        "EXPO_PUBLIC_API_KEY": "AIzaSyAYTCJQE6404CW0U2hxmT86z6Oxcj3yPYs",
+        "EXPO_PUBLIC_AUTH_DOMAIN": "test",
+        "EXPO_PUBLIC_STORAGE_BUCKET": "test",
+        "EXPO_PUBLIC_MESSAGING_SENDER_ID": "test",
+        "EXPO_PUBLIC_APP_ID": "test",
+        "EXPO_PUBLIC_MEASUREMENT_ID": "test",
+        "EXPO_PUBLIC_PROJECT_ID": "dogpark-7e6d7",
+        "REACT_APP_GRAPHQL_URL": "https://dp-stage-be.saasinnova.com/graphql",
+        "REACT_APP_PUBLIC_URL": "https://dp-stage-be.saasinnova.com",
+        "REACT_APP_SOCKET_DOMAIN": "http://192.168.29.112:3094",
+        "REACT_APP_SOCKET_PATH": "/socket.io",
+        "STRIPE_PUBLIC_KEY": "pk_test_51RKGKhPq3Dcn0C922E2WwV8YnIA1kLx0Icv3KIMLRx5A8fMKdwXhNVZYzLDr9uEKVkVRZCGHVcBs45YxTpmcer8000j6JnvbKo"
+      }
+    },
+    "production": {
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_API_KEY": "AIzaSyAYTCJQE6404CW0U2hxmT86z6Oxcj3yPYs",
+        "EXPO_PUBLIC_AUTH_DOMAIN": "test",
+        "EXPO_PUBLIC_STORAGE_BUCKET": "test",
+        "EXPO_PUBLIC_MESSAGING_SENDER_ID": "test",
+        "EXPO_PUBLIC_APP_ID": "test",
+        "EXPO_PUBLIC_MEASUREMENT_ID": "test",
+        "EXPO_PUBLIC_PROJECT_ID": "dogpark-7e6d7",
+        "REACT_APP_GRAPHQL_URL": "https://dp-stage-be.saasinnova.com/graphql",
+        "REACT_APP_PUBLIC_URL": "https://dp-stage-be.saasinnova.com",
+        "REACT_APP_WEB_URL": "https://dp-stage.saasinnova.com",
+        "REACT_APP_SOCKET_DOMAIN": "http://192.168.29.112:3094",
+        "REACT_APP_SOCKET_PATH": "/socket.io",
+        "STRIPE_PUBLIC_KEY": "pk_test_51RKGKhPq3Dcn0C922E2WwV8YnIA1kLx0Icv3KIMLRx5A8fMKdwXhNVZYzLDr9uEKVkVRZCGHVcBs45YxTpmcer8000j6JnvbKo",
+        "SALTO_PUBLIC_API_KEY_ACCEPT": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEFYDlLVhKz+qNQIBASs322cib/iwnnuSWczXSvU8GGYB6pgZgaCroCywHMPclFRehVsB+jYRJd6n4zkhDSGd5bQ==",
+        "SALTO_IDENTITY_URL": "https://identity-acc.eu.my-clay.com",
+        "SALTO_CLIENT_ID": "acf8c129-9eed-4131-b88b-028094ac8436",
+        "REDIRECT_URI": "https://dp-stage.saasinnova.com/salto-callback"
+      },
+      "cache": {
+        "disabled": true
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
