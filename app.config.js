@@ -61,7 +61,7 @@ export default {
       messagingSenderId: process.env.EXPO_PUBLIC_MESSAGING_SENDER_ID,
       appId: process.env.EXPO_PUBLIC_APP_ID,
       measurementId: process.env.EXPO_PUBLIC_MEASUREMENT_ID,
-      eas: {},
+      eas: { projectId: 'b0d5d2f2-e22f-4189-bf7c-ebd553f8df5f' },
       url: {
         api: process.env.REACT_APP_PUBLIC_URL,
         graphql: process.env.REACT_APP_GRAPHQL_URL,
